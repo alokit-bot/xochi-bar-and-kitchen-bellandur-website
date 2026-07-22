@@ -1,0 +1,104 @@
+{
+  "theme": "dark",
+  "archetype": "LUXURY",
+  "colors": {
+    "background": "#0A0B0E",
+    "surface": "#121418",
+    "surface_glass": "rgba(10, 11, 14, 0.75)",
+    "primary": "#FF9F1C",
+    "primary_hover": "#EAA028",
+    "accent_copper": "#C87550",
+    "text_main": "#FDFBF7",
+    "text_muted": "#A1A1AA",
+    "border": "rgba(255, 255, 255, 0.1)"
+  },
+  "typography": {
+    "headings": {
+      "font": "Cormorant Garamond",
+      "style": "Elegant, display serif, atmospheric. High contrast. tracking-tighter."
+    },
+    "body": {
+      "font": "Outfit",
+      "style": "Clean geometric sans, highly readable."
+    }
+  },
+  "visual_enhancers": {
+    "shadows": "Ambient glows using primary/accent colors with low opacity for hover states.",
+    "borders": "1px solid border-white/10 on cards and layout containers.",
+    "glassmorphism": "backdrop-blur-xl with bg-black/60 for sticky navs, overlays, and floating cards. No raw transparent backgrounds over content."
+  },
+  "layouts": {
+    "spacing": "Generous spacing. py-24 to py-32 for sections. gap-8 to gap-12 for grids. Avoid tight layouts.",
+    "bento_grid": "Use Mode A (Tetris grid) for the Offerings and Gallery. Asymmetrical span logic (col-span-8, col-span-4).",
+    "hero": "Max overlay bg-black/50. If text contrast is needed, use a gradient to transparent rather than full blanket overlay."
+  },
+  "motion": {
+    "scroll": "Lenis for smooth scrolling.",
+    "animations": "Framer motion for staggered fade-ins on scroll. Subtle scale up and border glow on card hover."
+  },
+  "content_facts": {
+    "name": "XOCHI Bar and Kitchen",
+    "type": "Pan-Asian restaurant",
+    "address": "1202 Outer Ring Road, Varathur Hobli, Bellandur, Bengaluru, Karnataka 560103",
+    "phone": "+91 80 4121 9625",
+    "rating": "4.2 stars",
+    "hours": "Open daily, closes 12am",
+    "description": "Cool Pan-Asian eatery serving seafood, meat and vegetarian dishes, plus spirits and cocktails.",
+    "hero_headline": "Pan-Asian nights, made for Bellandur"
+  },
+  "sections_to_build": [
+    "Sticky Header (Wordmark, Nav links, Reserve CTA)",
+    "Hero (Immersive image, Headline, 4.2 badge, Reserve/Call CTAs)",
+    "Offerings (4 visual cards for Seafood, Meat, Vegetarian, Cocktails)",
+    "The XOCHI Experience (Dining moments text + atmospheric image)",
+    "Gallery (Visual bento grid of food/interior/cocktails)",
+    "Visit XOCHI (Address, hours, phone, reservation CTA)",
+    "Footer (Links, copyright, subtle logo)"
+  ],
+  "image_urls": {
+    "hero": {
+      "url": "https://images.pexels.com/photos/18294725/pexels-photo-18294725.jpeg",
+      "description": "Moody Dubai restaurant with colorful hanging lights"
+    },
+    "offering_seafood": {
+      "url": "https://images.pexels.com/photos/699544/pexels-photo-699544.jpeg",
+      "description": "Spicy prawns in sauce"
+    },
+    "offering_meat": {
+      "url": "https://images.pexels.com/photos/31299642/pexels-photo-31299642.jpeg",
+      "description": "Asian beef dish with egg"
+    },
+    "offering_vegetarian": {
+      "url": "https://images.pexels.com/photos/16845747/pexels-photo-16845747.jpeg",
+      "description": "Asian dish with rice and vegetables"
+    },
+    "offering_cocktails": {
+      "url": "https://images.pexels.com/photos/2615326/pexels-photo-2615326.jpeg",
+      "description": "Dark mixed drink cocktail"
+    },
+    "gallery_1": {
+      "url": "https://images.pexels.com/photos/9495784/pexels-photo-9495784.jpeg",
+      "description": "Cozy restaurant wooden tables"
+    },
+    "gallery_2": {
+      "url": "https://images.pexels.com/photos/4485364/pexels-photo-4485364.jpeg",
+      "description": "Bartender adding zest to cocktail"
+    },
+    "gallery_3": {
+      "url": "https://images.pexels.com/photos/28397638/pexels-photo-28397638.jpeg",
+      "description": "Top view diverse asian meal"
+    }
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Never use generic centered layouts. Use asymmetrical grids.",
+    "Do not use transparent header; always use glassmorphism with blur and background opacity.",
+    "Do not invent facts (awards, prices, menu items). Use only provided facts in content_facts.",
+    "Ensure minimum WCAG AA contrast for text over images using text shadow or gradient overlays.",
+    "Add 'data-testid' to all interactive elements (buttons, links, form inputs).",
+    "Do NOT apply 'transition: all' in CSS.",
+    "Do NOT center align the app container in App.css.",
+    "Use Lucide-react for icons.",
+    "Include hover states and micro-animations for every interactive element.",
+    "Build as a frontend-only React SPA marketing site using standard HTML/Tailwind for layout (do not rely on Shadcn layout wrappers for landing page creativity)."
+  ]
+}

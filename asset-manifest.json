@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/xochi-bar-and-kitchen-bellandur-website/static/css/main.21bf554a.css",
+    "main.js": "/xochi-bar-and-kitchen-bellandur-website/static/js/main.b08dc332.js",
+    "index.html": "/xochi-bar-and-kitchen-bellandur-website/index.html",
+    "main.21bf554a.css.map": "/xochi-bar-and-kitchen-bellandur-website/static/css/main.21bf554a.css.map",
+    "main.b08dc332.js.map": "/xochi-bar-and-kitchen-bellandur-website/static/js/main.b08dc332.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21bf554a.css",
+    "static/js/main.b08dc332.js"
+  ]
+}
